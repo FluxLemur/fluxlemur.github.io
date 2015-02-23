@@ -1,18 +1,8 @@
-<html>
+---
+layout: default
+title: Home
+---
 
-<head>
-<title> Leo's Home </title>
-</head>
-
-<body>
-<h1 align="center">
-  Ruminations from Leo
-</h1>
-
-<p align="center">
-<a href="index.html">Here</a> be content.
-</p>
-
-</body>
-
-</html>
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include post.html %}
