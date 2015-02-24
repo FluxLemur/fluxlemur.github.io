@@ -14,7 +14,11 @@
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">Published on {{ page.date | date_to_string }}</span>
+      {% if page.edited ~= '' %}
+        <span id="edit-date">Last Edited {{ page.edited | date_to_string }}</span>
+      {% else %}
+        <span id="pub-date">Published {{ page.date | date_to_string }}</span>
+      {% endif %}
       <!-- <span class="separator">&bull;</span> -->
     </p>
   </div>
