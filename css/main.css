@@ -194,6 +194,12 @@ a:hover {
   border: none;
 }
 
+.post pre.limit-out {
+  min-height: 1pc;
+  max-height: 50pc;
+  overflow: auto;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;

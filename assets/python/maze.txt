@@ -1,0 +1,13 @@
+Here we generate a random maze. Do you see a path from the start, X, to the goal, G?
+(Making only moves North, East, South, West). The search algrithm within is
+<a href="http://en.wikipedia.org/wiki/Breadth-first_search">Breadth First Search</a>.
+<br />
+
+<br />
+On the matter of search,
+<em>Dijkstra's Algorithm</em>
+is inferior to a simpler and more effiecient search algorithm:
+<em>Uniform Cost Search</em>.
+(See this <a href="http://www.bgu.ac.il/~felner/2011/dikstra.pdf">position paper</a>).
+Uniform Cost Search is an uninformed search algorithm that explores a search space
+in the same way Dijkstra's does.

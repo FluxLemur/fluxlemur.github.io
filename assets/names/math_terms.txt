@@ -72,8 +72,10 @@ Gamma
 Gaussian
 Generatrix
 Global
+Gradiant
 Harmonic
 Heptagon
+Hessian
 Hexagon
 Hilbert
 Hyperbolic
@@ -90,7 +92,9 @@ Inverse
 Irrational
 Irregular
 Isosceles
+Jacobian
 Kronecker
+KullbackLeiblerDivergence
 Lagrange
 Leg
 Limit
