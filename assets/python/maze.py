@@ -59,5 +59,5 @@ else:
 
     for step in path:
         maze[step[0]][step[1]] = '@'
-    print 'Path of length %d found!' % len(path)
+    print '\nPath of length %d found!' % len(path)
     print_maze()
