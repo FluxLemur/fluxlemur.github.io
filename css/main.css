@@ -198,6 +198,7 @@ a:hover {
   min-height: 1pc;
   max-height: 50pc;
   overflow: auto;
+  line-height: 16px;
 }
 
 /* terminal */
