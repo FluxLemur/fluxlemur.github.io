@@ -17,7 +17,7 @@ while goal == (0,0): # we shouldn't make this too easy...
     goal = (int(r()*length), int(r()*length))
 maze[goal[0]][goal[1]] = 'G'
 
-# We aught to see the world
+# We ought to see the world
 def print_maze():
     for row in maze:
         for elem in row:
@@ -49,7 +49,7 @@ while len(frontier) > 0:
             frontier.append(n)
 
 if not found:
-    print 'No path found :('
+    print '\nNo path found :('
 else:
     back = backpointers[goal]
     path = []
