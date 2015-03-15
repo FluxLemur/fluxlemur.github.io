@@ -1,1 +1,1 @@
-Palindrome, a classic demo.
+Palindrome, a classic demo. Try editing the code and running it!

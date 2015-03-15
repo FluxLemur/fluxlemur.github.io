@@ -3,17 +3,17 @@ import random
 
 # First, we create this maze world
 length = 10
-density = 0.7
+density = 0.2 # of barriers
 barrier = '+'
 space = '_'
 r = random.random # nice function pointer
-maze = [[barrier if r() > density else space for i in xrange(length)] for j in xrange(length)]
+maze = [[barrier if r() > (1-density) else space for i in xrange(length)] for j in xrange(length)]
 
 # Let's initialize the start and goal locations
 start = (0,0)
 maze[start[0]][start[1]] = 'S'
 goal = (int(r()*length), int(r()*length))
-while goal == (0,0): # we shouldn't make this too easy...
+while goal == start: # we shouldn't make this too easy...
     goal = (int(r()*length), int(r()*length))
 maze[goal[0]][goal[1]] = 'G'
 
@@ -25,8 +25,10 @@ def print_maze():
         print ''
 print_maze()
 
+print 'Comment or delete the exit line below'
 quit()
-# Shall we Breadth First Search?
+
+# Time to Breadth First Search!
 frontier = [start]  # stores what's around our current place
 visited = {}        # where have we been?
 backpointers = {}   # how do we find the way home?

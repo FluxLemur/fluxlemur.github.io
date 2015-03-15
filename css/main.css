@@ -190,6 +190,10 @@ a:hover {
   padding: 0 .2em;
 }
 
+.post em {
+  padding: 0 .1em
+}
+
 .post pre code {
   border: none;
 }
