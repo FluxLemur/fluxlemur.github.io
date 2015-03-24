@@ -30,6 +30,8 @@ function runit(in_id, out_id) {
 
 function setExplanation() {
   var select = document.getElementById("select");
+  if (!select)
+    return;
   var program = select.options[select.selectedIndex].innerHTML;
   $.get('/assets/python/'+program.toLowerCase()+'.txt').done(function(source) {
     document.getElementById("explanation").innerHTML = source

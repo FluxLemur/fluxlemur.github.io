@@ -23,11 +23,12 @@ editor.setOption("extraKeys", {
 
 function setSource() {
   var select = document.getElementById("select");
+  if (!select)
+    return;
   var program = select.options[select.selectedIndex].innerHTML;
   $.get('/assets/python/'+program.toLowerCase()+'.py').done(function(source) {
     editor.setValue(source);
     document.getElementById("output").innerHTML = '';
-    //runit('input', 'output');
   });
 }
 

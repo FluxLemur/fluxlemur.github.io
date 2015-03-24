@@ -172,11 +172,16 @@ a:hover {
   padding: 0 .4em;
 }
 
-.post p {
+.post p, .content ul, #bibliography {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 17px;
-  margin-bottom: 1.45em;
+  margin-bottom: 1.3em;
   text-align: justify;
+}
+
+#bibliography {
+  font-size: 15px;
+  margin-bottom: 0em
 }
 
 .post ul, .post ol {
@@ -191,7 +196,7 @@ a:hover {
 }
 
 .post em {
-  padding: 0 .1em
+  padding: 0 .2em
 }
 
 .post pre code {
@@ -203,6 +208,10 @@ a:hover {
   max-height: 50pc;
   overflow: auto;
   line-height: 16px;
+}
+
+.post sub, sup {
+  font-size: 13px;
 }
 
 /* terminal */
