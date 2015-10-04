@@ -7,7 +7,9 @@ density = 0.2 # of barriers
 barrier = '+'
 space = '_'
 r = random.random # nice function pointer
-maze = [[barrier if r() > (1-density) else space for i in xrange(length)] for j in xrange(length)]
+def gen_row():
+    return [barrier if r() > (1-density) else space for i in xrange(length)]
+maze = [gen_row() for j in xrange(length)]
 
 # Let's initialize the start and goal locations
 start = (0,0)
