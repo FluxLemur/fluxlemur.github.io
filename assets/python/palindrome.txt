@@ -1,1 +1,0 @@
-Palindrome, a classic demo. Try editing the code and running it!

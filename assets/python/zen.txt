@@ -1,1 +1,0 @@
-Easter egg list of guiding principles behind Python's design.

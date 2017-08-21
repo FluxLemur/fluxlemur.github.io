@@ -8,32 +8,20 @@ function builtinRead(x) {
   return Sk.builtinFiles["files"][x];
 }
 
-function runit(in_id, out_id) { 
+function runit(in_id, out_id) {
   // runs python interpreter on the value in in_id element
-  //   and outputs the results in out_id element
-  var input = document.getElementById(in_id).value; 
-  var output = document.getElementById(out_id); 
-  output.innerText = ''; 
+  // and outputs the results in out_id element
+  var input = document.getElementById(in_id).value;
+  var output = document.getElementById(out_id);
+  output.innerText = '';
   Sk.pre = out_id;
   Sk.configure({output:function(text) {
-    output.innerHTML = output.innerHTML + text; 
+    output.innerHTML = output.innerHTML + text;
   }, read:builtinRead});
   try {
-    eval(Sk.importMainWithBody("<stdin>",false,input)); 
+    eval(Sk.importMainWithBody("<stdin>",false,input));
   }
   catch(e) {
     output.innerHTML = e.toString()
   }
-}
-
-/** Changing element text **/
-
-function setExplanation() {
-  var select = document.getElementById("select");
-  if (!select)
-    return;
-  var program = select.options[select.selectedIndex].innerHTML;
-  $.get('/assets/python/'+program.toLowerCase()+'.txt').done(function(source) {
-    document.getElementById("explanation").innerHTML = source
-  });
 }
