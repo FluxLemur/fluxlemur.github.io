@@ -5,8 +5,7 @@ var editorOptions = {
   styleActiveLine: true,
   mode: "python",
   indentUnit: 4,
-  theme: "monokai",
-  viewportMargin: Infinity,
+  theme: "monokai"
 };
 
 var editors = [];
@@ -20,7 +19,7 @@ function addEditor(name) {
   var outputName = 'output_' + name;
   editor.setOption("extraKeys", {
     Tab: function(cm) {
-      var spaces = Array(cm.getOption('indentUnit')+1).join(" ");
+      var spaces = Array(cm.getOption('indentUnit') + 1).join(" ");
       cm.replaceSelection(spaces);
     },
   });

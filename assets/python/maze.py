@@ -1,22 +1,29 @@
 # This is not a random import, it's quite pertinent to the code
-import random
+from random import random
 
 # First, we create this maze world
 length = 10
-density = 0.2 # of barriers
+density = 0.2  # probability of generating a barrier in a cell
 barrier = '+'
 space = '_'
-r = random.random # nice function pointer
+
 def gen_row():
-    return [barrier if r() > (1-density) else space for i in xrange(length)]
-maze = [gen_row() for j in xrange(length)]
+    def gen_cell():
+        if random() > 1 - density:
+            return barrier
+        else:
+            return space
+    return [gen_cell() for _ in xrange(length)]
+maze = [gen_row() for _ in xrange(length)]
 
 # Let's initialize the start and goal locations
 start = (0,0)
 maze[start[0]][start[1]] = 'S'
-goal = (int(r()*length), int(r()*length))
+def gen_goal():
+    return (int(random() * length), int(random() * length))
+goal = gen_goal()
 while goal == start: # we shouldn't make this too easy...
-    goal = (int(r()*length), int(r()*length))
+    goal = gen_goal()
 maze[goal[0]][goal[1]] = 'G'
 
 # We ought to see the world
@@ -27,14 +34,12 @@ def print_maze():
         print ''
 print_maze()
 
-print 'Comment or delete the exit line below'
-quit()
-
 # Time to Breadth First Search!
 frontier = [start]  # stores what's around our current place
 visited = {}        # where have we been?
 backpointers = {}   # how do we find the way home?
-found = False       # we may finish, never to have found the gold
+found = False       # we may finish, never to have found the goal
+
 while len(frontier) > 0:
     visit = frontier[0]
     del frontier[0]
@@ -42,6 +47,8 @@ while len(frontier) > 0:
         found = True
         break
     visited[visit] = 1
+
+    # generate neighbor cells and add them to the frontier
     neighbors = [(0,1),(0,-1),(1,0),(-1,0)]
     neighbors = [tuple(map(sum, zip(x,visit))) for x in neighbors]
     neighbors = filter(lambda x: min(x) >= 0 and max(x) < length, neighbors)
