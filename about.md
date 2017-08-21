@@ -6,7 +6,14 @@ title:  About
 ---
 
 Greetings, my name is Leo Mehr.
-I study the scientific and practical approach to computation and its applications (<a style="border:none" href="https://en.wikipedia.org/wiki/Computer_science"><img class="embedded-img" src="/images/wikipedia_globe.png" /></a>) at [Cornell University](https://www.cs.cornell.edu/).
+I graduated with a BS in the scientific and practical approach to computation
+and its applications (<a style="border:none"
+href="https://en.wikipedia.org/wiki/Computer_science"><img class="embedded-img"
+src="/images/wikipedia_globe.png" /></a>) from
+[Cornell University](https://www.cs.cornell.edu/) in 2016.
+
+I now live in NYC and build software at [Hudson River
+Trading](http://www.hudson-trading.com/).
 
 "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 
