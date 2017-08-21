@@ -10,7 +10,7 @@ var editorOptions = {
 
 var editors = [];
 
-function addEditor(name) {
+function addEditor(name, enableKeystroke=false) {
   var inputName = 'input_' + name;
   var editor = CodeMirror.fromTextArea(document.getElementById(inputName), editorOptions);
   editor.on("change", function() {editor.getTextArea().innerHTML = editor.getValue()});
@@ -21,8 +21,13 @@ function addEditor(name) {
     Tab: function(cm) {
       var spaces = Array(cm.getOption('indentUnit') + 1).join(" ");
       cm.replaceSelection(spaces);
-    },
-  });
+    }});
+  if (enableKeystroke) {
+    editor.setOption("extraKeys", {
+      'Ctrl-Enter': function() {
+        runit(inputName, outputName);
+    }});
+  }
 
   // add the source
   $.get('/assets/python/' + name + '.py').done(function(source) {
@@ -32,7 +37,3 @@ function addEditor(name) {
 
   editors.push(editor);
 };
-
-addEditor("palindrome");
-addEditor("zen");
-addEditor("maze");

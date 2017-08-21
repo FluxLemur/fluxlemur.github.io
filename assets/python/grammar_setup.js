@@ -1,0 +1,1 @@
+addEditor("grammar", enableKeystroke=true);
