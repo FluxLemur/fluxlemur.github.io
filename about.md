@@ -1,7 +1,7 @@
 ---
 layout: about
 date:   2015-02-23 12:00:00
-edited:   2015-11-04 12:00:00
+edited:   2017-12-13 12:00:00
 title:  About
 ---
 
@@ -18,5 +18,5 @@ Trading](http://www.hudson-trading.com/).
 "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 
 <img class="large-img" src="/images/gates.jpg" />
-<span class="subtle"><a href="https://plus.google.com/u/0/+Cornell/posts/QFboA7E6ovZ">Credit</a>
-to Ksenia Verdiyan.</span>
+<span class="subtle">Gates Hall, Ithaca NY. <a href="https://plus.google.com/u/0/+Cornell/posts/QFboA7E6ovZ">Photo Credit</a>
+Ksenia Verdiyan.</span>
