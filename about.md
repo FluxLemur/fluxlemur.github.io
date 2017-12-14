@@ -15,8 +15,10 @@ src="/images/wikipedia_globe.png" /></a>) from
 I now live in NYC and build software at [Hudson River
 Trading](http://www.hudson-trading.com/).
 
+I use this website to dabble with ideas and occasionally write something
+instructive.
+
 "Any sufficiently advanced technology is indistinguishable from magic." - Arthur C. Clarke
 
 <img class="large-img" src="/images/gates.jpg" />
-<span class="subtle">Gates Hall, Ithaca NY. <a href="https://plus.google.com/u/0/+Cornell/posts/QFboA7E6ovZ">Photo Credit</a>
-Ksenia Verdiyan.</span>
+<span class="subtle">Gates Hall. Ithaca, NY.</span>
