@@ -5,15 +5,8 @@ edited:   2017-12-13 12:00:00
 title:  About
 ---
 
-My name is Leo Mehr.
-At <b>Cornell</b> (BS, 2016) and <b>Stanford</b> (MS, 2020), I studied
-the scientific and practical approach to computation
-and its applications (computer science, see <a style="border:none"
-href="https://en.wikipedia.org/wiki/Computer_science"><img class="embedded-img"
-src="/images/wikipedia_globe.png" /></a>).
-
-For two years, I built distributed systems and APIs for trading algorithm research at [Hudson River
-Trading](http://www.hudson-trading.com/).
+[My LinkedIn](https://www.linkedin.com/in/leomehr/)
+is a good place to learn about me and my story.
 
 I use this website to dabble with ideas and occasionally write something
 instructive.
